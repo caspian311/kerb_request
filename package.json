@@ -2,9 +2,9 @@
   "name": "kerb_request",
   "version": "0.0.1",
   "description": "Nodejs library for using kinit and curl to make kerberos authenticated requests.",
-  "main": "index.js",
+  "main": "./lib/kerb_request.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -14,13 +14,14 @@
     "nodejs",
     "kerberos"
   ],
-  "author": "Matt Todd",
+  "author": "Matt Todd <matt.c.todd@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/caspian311/kerb_request/issues"
   },
   "homepage": "https://github.com/caspian311/kerb_request",
   "dependencies": {
-    "suppose": "^0.3.0"
+    "suppose": "^0.3.0",
+    "mocha": "^1.18.2"
   }
 }
